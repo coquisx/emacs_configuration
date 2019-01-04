@@ -18,17 +18,16 @@
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/"))
 
+;; Function to load all *.el files in emacs directory
+(load "~/.emacs.d/init.el")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
-   [default default default italic underline success warning error])
- '(custom-enabled-themes (quote (tango-dark)))
- '(inhibit-startup-screen t)
- '(package-selected-packages (quote (sr-speedbar)))
- '(tab-width 4))
+   [default default default italic underline success warning error]))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -37,24 +36,5 @@
  ;; If there is more than one, they won't work right.
  )
 
-
-;;; Custom variables
-;;(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
-;;; Custom settings
-;;(setq settings-file (expand-file-name "settings.el" user-emacs-directory))
-
-;;; Loads settings file
-;;(when (file-exists-p custom-file)
-;;  (load settings-file))
-
-;; Require everything...
-;;(require 'init-utils)
-;;...
-;;...
-;;...
-
-;;; Loads custom file
-;;(when (file-exists-p custom-file)
-;;  (load custom-file))
 
 
