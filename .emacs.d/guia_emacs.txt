@@ -1,0 +1,5 @@
+C-x C-e -> evalua la linea del cursor
+
+emacs -debug-init
+
+ 
