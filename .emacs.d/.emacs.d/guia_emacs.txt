@@ -2,5 +2,5 @@ C-x C-e -> evalua la linea del cursor
 
 emacs -debug-init
 
-M-x sr-speedbar-open	
+M-x sr-speedbar-open
  

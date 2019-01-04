@@ -29,7 +29,7 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(package-selected-packages (quote (sr-speedbar)))
- '(tab-width 4))
+ '(tab-width 8))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
