@@ -14,8 +14,9 @@
 ;; Function to load all *.el files in emacs directory
 (load "~/.emacs.d/init.el")
 (load "~/.emacs.d/custom-helm-projectile-config.el")
-(load "~/.emacs.d/sr-speedbar-config.el")
+(load "~/.emacs.d/custom-sr-speedbar-config.el")
 (load "~/.emacs.d/cplusplus-mode.el")
+(load "~/.emacs.d/custom-ggtags-config.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -24,7 +25,9 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
- '(package-selected-packages (quote (helm-projectile projectile sr-speedbar)))
+ '(inhibit-startup-screen t)
+ '(initial-buffer-choice nil)
+ '(package-selected-packages (quote (ggtags helm-projectile projectile sr-speedbar)))
  '(sr-speedbar-right-side nil)
  '(sr-speedbar-width 15 t))
 

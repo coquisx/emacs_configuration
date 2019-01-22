@@ -1,0 +1,23 @@
+
+(require 'sr-speedbar)
+
+(custom-set-variables
+ '(sr-speedbar-right-side nil)
+ '(sr-speedbar-width 15)
+ )
+
+(defun speedbar-buffers ()
+  "show buffer list in the speedbar"
+  (interactive)
+  (speedbar-change-initial-expansion-list "quick buffers"))
+
+(defun speedbar-files ()
+  "show file list in the speedbar"
+  (interactive)
+  (speedbar-change-initial-expansion-list "files"))
+
+(sr-speedbar-open)
+
+;(add-hook 'emacs-startup-hook (lambda ()
+;								(sr-speedbar-open)
+;								))
