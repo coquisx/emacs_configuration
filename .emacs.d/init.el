@@ -36,5 +36,8 @@
 ;; Show only one active window when opening multiple files at the same time.
 (add-hook 'window-setup-hook 'delete-other-windows)
 
+;; No crees ficheros temporales xxx~
+(setq make-backup-files nil)    
+
 ;; Set tango-dark theme
 (load-theme 'tango-dark t)
