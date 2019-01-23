@@ -1,1 +1,1 @@
-("~/workspace/UCS61850_UFD/src/bin/gestor/src/" "~/workspace/UCS61850_UFD/src/" "~/workspace/UCS61850_UFD/src/bin/anomaliasHW/src/")
+("~/workspace/UCS61850_UFD/src/bin/anomaliasHW/src/" "~/workspace/UCS61850_UFD/src/bin/gestor/src/" "~/workspace/UCS61850_UFD/src/" "~/workspace/UCS61850_UFD/src/bin/pcainit/src/" "~/workspace/UCS61850_UFD/src/test/" "~/workspace/UCS61850_UFD/src/lib/" "~/workspace/UCS61850_UFD/src/bin/" "~/workspace/UCS61850_UFD/src/.settings/")
