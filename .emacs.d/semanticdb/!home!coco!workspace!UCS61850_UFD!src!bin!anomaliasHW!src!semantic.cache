@@ -1,0 +1,742 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [255 273])
+            ("unistd.h" include (:system-flag t) nil [274 293])
+            ("sstream" include (:system-flag t) nil [294 312])
+            ("libutils/infof.h" include nil nil [324 351])
+            ("libipcmes/utilidades.h" include nil nil [352 385])
+            ("configurador.h" include nil nil [386 411])
+            ("valores.h" include nil nil [412 432])
+            ("aplicacion.h" include nil nil [433 456])
+            ("red_checker.h" include nil nil [472 496])
+            ("canalDual_checker.h" include nil nil [497 527])
+            ("serial_checker.h" include nil nil [528 555])
+            ("serialSocat_checker.h" include nil nil [556 588])
+            ("pwrSup_checker.h" include nil nil [589 616])
+            ("appAnomalias.h" include nil nil [617 642])
+            ("CAppAnomalias" function
+               (:constructor-flag t
+                :parent "CAppAnomalias"
+                :arguments 
+                  ( ("nId" variable (:type "int") (reparse-symbol arg-sub-list) [674 682])
+                    ("szNombreColaSend" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [683 712])
+                    ("szNombreColaRecv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [713 742])
+                    ("pcNombreProcesoParaCommon" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [743 781])
+                    ("bIsCuFo" variable (:type "bool") (reparse-symbol arg-sub-list) [782 795]))                  
+                :type ("CAppAnomalias" type (:type "class") nil nil))
+                nil [644 1242])
+            ("CAppAnomalias" function
+               (:destructor-flag t
+                :parent "CAppAnomalias"
+                :type "void")
+                nil [1244 1364])
+            ("NConfigurarAplicacion" function
+               (:parent "CAppAnomalias"
+                :type "int")
+                nil [1366 2709])
+            ("NConfigurarAplicacion" function
+               (:parent "CAppAnomalias"
+                :arguments 
+                  ( ("filepath" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2752 2780]))                  
+                :type "int")
+                nil [2711 5021])
+            ("BEnviarMsgPLC" function
+               (:parent "CAppAnomalias"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5057 5075]))                  
+                :type "bool")
+                nil [5023 5181])
+            ("BEnviarMsgEventos" function
+               (:parent "CAppAnomalias"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5221 5239]))                  
+                :type "bool")
+                nil [5183 5350])
+            ("CConexionProcesoGestorAnomalias" function
+               (:constructor-flag t
+                :parent "CAppAnomalias::CConexionProcesoGestorAnomalias"
+                :arguments 
+                  ( ("nIdent" variable (:type "int") (reparse-symbol arg-sub-list) [5517 5528])
+                    ("pCommon" variable
+                       (:pointer 1
+                        :type ("CCommonConect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5529 5552])
+                    ("szNombreColaSend" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5553 5582])
+                    ("szNombreColaRecv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5585 5614])
+                    ("pclsAplicacion" variable
+                       (:pointer 1
+                        :type ("CAppAnomalias" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5615 5645]))                  
+                :type ("CConexionProcesoGestorAnomalias" type (:type "class") nil nil))
+                nil [5434 5763])
+            ("CConexionProcesoGestorAnomalias" function
+               (:destructor-flag t
+                :parent "CAppAnomalias::CConexionProcesoGestorAnomalias"
+                :type "void")
+                nil [5765 5851])
+            ("NProcessMessage" function
+               (:parent "CAppAnomalias::CConexionProcesoGestorAnomalias"
+                :arguments 
+                  ( ("pstcMensaje" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5921 5946]))                  
+                :type "int")
+                nil [5853 6561]))          
+      :file "appAnomalias.cpp"
+      :pointmax 6562
+      :fsize 6561
+      :lastmodtime '(23613 53645 929135 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "red_checker.h"
+      :fsize 2039
+      :lastmodtime '(23613 53645 923507 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CCANALDUALCHECKER_H_" variable (:constant-flag t) nil [297 317])
+            ("checker.h" include nil nil [319 339])
+            ("CCanalDualChecker" type
+               (:superclasses 
+                  ( ("CChecker" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [385 392])
+                    ("CCanalDualChecker" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pConfigurador" variable
+                               (:pointer 1
+                                :type ("CConfigurador" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [900 929])
+                            ("pValores" variable
+                               (:pointer 1
+                                :type ("CValores" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [930 949])
+                            ("pAppTimer" variable
+                               (:pointer 1
+                                :type ("CAppTimer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [950 971])
+                            ("pInfof" variable
+                               (:pointer 1
+                                :type ("CInfof" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [972 987])
+                            ("pAppAnomalias" variable
+                               (:pointer 1
+                                :type ("CAppAnomalias" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [988 1017]))                          
+                        :type ("CCanalDualChecker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [882 1018])
+                    ("CCanalDualChecker" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1078 1107])
+                    ("NConfigurar" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pXmlCfg" variable
+                               (:pointer 1
+                                :type ("CXmlConfigItem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1403 1428]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1387 1429])
+                    ("private" label nil (reparse-symbol classsubparts) [1431 1439])
+                    ("_NActualizaEstado" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1644 1668])
+                    ("_NReturnOk" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1808 1843])
+                    ("_NReturnErr" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1977 2013])
+                    ("private" label nil (reparse-symbol classsubparts) [2015 2023])
+                    ("m_sNameIfaz" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2028 2052])
+                    ("m_sPathRxBytes" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2057 2084])
+                    ("m_sRxBytes" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2089 2112]))                  
+                :type "class")
+                nil [341 2116]))          
+      :file "canalDual_checker.h"
+      :pointmax 2152
+      :fsize 2151
+      :lastmodtime '(23613 53645 959657 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CCANALDUALCHECKER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "serial_checker.h"
+      :fsize 2028
+      :lastmodtime '(23613 53645 962978 0))
+    (semanticdb-table "semanticdb-table"
+      :file "serialSocat_checker.h"
+      :fsize 2072
+      :lastmodtime '(23613 53645 916232 0))
+    (semanticdb-table "semanticdb-table"
+      :file "pwrSup_checker.h"
+      :fsize 2028
+      :lastmodtime '(23613 53645 920264 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("____APP_ANOMALIAS_H" variable (:constant-flag t) nil [282 301])
+            ("string" include (:system-flag t) nil [310 327])
+            ("vector" include (:system-flag t) nil [328 345])
+            ("libutils/xml_config.h" include nil nil [357 389])
+            ("libutils/environment.h" include nil nil [390 423])
+            ("libcolasmsg/colademsgs.h" include nil nil [424 459])
+            ("libsac/sac/convert.hpp" include nil nil [460 493])
+            ("aplicacion.h" include nil nil [494 517])
+            ("conexionprocesogestor.h" include nil nil [518 552])
+            ("apptimer.h" include nil nil [553 574])
+            ("checker.h" include nil nil [590 610])
+            ("CAppAnomalias" type
+               (:superclasses 
+                  ( ("CAplicacion" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("CEnvironment" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [678 685])
+                    ("CAppAnomalias" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("nId" variable (:type "int") (reparse-symbol arg-sub-list) [1154 1162])
+                            ("szNombreColaSend" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1163 1192])
+                            ("szNombreColaRecv" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1193 1222])
+                            ("pcNombreProcesoParaCommon" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1223 1261])
+                            ("bIsCuFo" variable (:type "bool") (reparse-symbol arg-sub-list) [1262 1275]))                          
+                        :type ("CAppAnomalias" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1140 1276])
+                    ("CAppAnomalias" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1337 1362])
+                    ("NConfigurarAplicacion" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1671 1699])
+                    ("NConfigurarAplicacion" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("filepath" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2013 2041]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1987 2042])
+                    ("public" label nil (reparse-symbol classsubparts) [2044 2051])
+                    ("VChequearEntrada" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2344 2384])
+                    ("NAlarmaInternaEnAplicacion" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("pStcMensaje" variable
+                               (:pointer 1
+                                :type ("ipcMENSAJES" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2775 2800]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2737 2812])
+                    ("NInicializarComunicacion" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3079 3128])
+                    ("NPararComunicacion" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3424 3467])
+                    ("public" label nil (reparse-symbol classsubparts) [3469 3476])
+                    ("BIsCuFo" function (:type "bool") (reparse-symbol classsubparts) [3622 3656])
+                    ("BEnviarMsgPLC" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pMsg" variable
+                               (:pointer 1
+                                :type ("ipcMENSAJES" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3930 3948]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3911 3949])
+                    ("BEnviarMsgEventos" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pMsg" variable
+                               (:pointer 1
+                                :type ("ipcMENSAJES" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4215 4233]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4192 4234])
+                    ("protected" label nil (reparse-symbol classsubparts) [4236 4246])
+                    ("CConexionProcesoGestorAnomalias" type
+                       (:superclasses 
+                          ( ("CConexionProcesoGestor" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4330 4337])
+                            ("CConexionProcesoGestorAnomalias" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("nIdent" variable (:type "int") (reparse-symbol arg-sub-list) [5038 5049])
+                                    ("pCommon" variable
+                                       (:pointer 1
+                                        :type ("CCommonConect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5050 5073])
+                                    ("szNombreColaSend" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5074 5103])
+                                    ("szNombreColaRecv" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [5135 5164])
+                                    ("pclsAplicacion" variable
+                                       (:pointer 1
+                                        :type ("CAppAnomalias" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5165 5195]))                                  
+                                :type ("CConexionProcesoGestorAnomalias" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5006 5196])
+                            ("CConexionProcesoGestorAnomalias" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [5248 5291])
+                            ("NProcessMessage" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("pstcMensaje" variable
+                                       (:pointer 1
+                                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5546 5571]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5518 5572]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [4251 5579])
+                    ("public" label nil (reparse-symbol classsubparts) [5581 5588])
+                    ("GetConexionGestor" function
+                       (:typemodifiers ("inline")
+                        :type ("CConexionProcesoGestorAnomalias" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5593 5684])
+                    ("checker" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5929 5946]))                          
+                        :type ("CChecker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5910 5979])
+                    ("checkers" function
+                       (:methodconst-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [6130 6191])
+                    ("NConfiguraXML" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("T" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("xmlConfig" variable
+                               (:reference 1
+                                :type ("CXmlConfig" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6579 6601])
+                            ("tag" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6602 6625]))                          )
+                        (reparse-symbol classsubparts) [6526 7037])
+                    ("private" label nil (reparse-symbol classsubparts) [7040 7048])
+                    ("m_clsConexionGestor" variable (:type ("CConexionProcesoGestorAnomalias" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7053 7105])
+                    ("m_cConfigurador" variable (:type ("CConfigurador" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7174 7204])
+                    ("m_cValores" variable (:type ("CValores" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7282 7302])
+                    ("m_cAppTimer" variable (:type ("CAppTimer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7388 7410])
+                    ("m_pColaPlc" variable
+                       (:pointer 1
+                        :type ("CColaDeMsgs" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7465 7489])
+                    ("m_pColaEventos" variable
+                       (:pointer 1
+                        :type ("CColaDeMsgs" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7543 7571])
+                    ("m_nId" variable (:type "int") (reparse-symbol classsubparts) [7628 7638])
+                    ("m_bIsCufo" variable (:type "bool") (reparse-symbol classsubparts) [7687 7702])
+                    ("m_vAnomalias" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("CChecker" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [7766 7803]))                  
+                :type "class")
+                nil [612 7853]))          
+      :file "appAnomalias.h"
+      :pointmax 7888
+      :fsize 7888
+      :lastmodtime '(23613 53645 992793 0)
+      :unmatched-syntax '((punctuation 7037 . 7038))
+      :lexical-table 
+        '(("____APP_ANOMALIAS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CCHECKER_H_" variable (:constant-flag t) nil [270 281])
+            ("vector" include (:system-flag t) nil [290 307])
+            ("string" include (:system-flag t) nil [308 325])
+            ("libipcmes/ipcmensajes.h" include nil nil [337 371])
+            ("libcommoniec61850/common.h" include nil nil [392 429])
+            ("libutils/sactime.h" include nil nil [430 459])
+            ("libutils/xml_config.h" include nil nil [460 492])
+            ("configurador.h" include nil nil [493 518])
+            ("valores.h" include nil nil [519 539])
+            ("apptimer.h" include nil nil [540 561])
+            ("CAppAnomalias" type
+               (:prototype t
+                :type "class")
+                nil [577 597])
+            ("CChecker" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [616 623])
+                    ("CChecker" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pConfigurador" variable
+                               (:pointer 1
+                                :type ("CConfigurador" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1125 1154])
+                            ("pValores" variable
+                               (:pointer 1
+                                :type ("CValores" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1155 1174])
+                            ("pAppTimer" variable
+                               (:pointer 1
+                                :type ("CAppTimer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1175 1196])
+                            ("pInfof" variable
+                               (:pointer 1
+                                :type ("CInfof" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1197 1212])
+                            ("pAppAnomalias" variable
+                               (:pointer 1
+                                :type ("CAppAnomalias" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1213 1242]))                          
+                        :type ("CChecker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1116 1243])
+                    ("CChecker" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1303 1323])
+                    ("NConfigurar" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pXmlCfg" variable
+                               (:pointer 1
+                                :type ("CXmlConfigItem" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1627 1652]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1603 1653])
+                    ("NDoWork" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1938 1952])
+                    ("protected" label nil (reparse-symbol classsubparts) [1954 1964])
+                    ("_NActualizaEstado" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2225 2261])
+                    ("_NReturnOk" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2463 2492])
+                    ("_NReturnErr" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2688 2718])
+                    ("private" label nil (reparse-symbol classsubparts) [2720 2728])
+                    ("_NProcessReturn" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nValor" variable (:type "int") (reparse-symbol arg-sub-list) [2942 2953]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2922 2954])
+                    ("_NInvierteValor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nValor" variable (:type "int") (reparse-symbol arg-sub-list) [3168 3179]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3148 3180])
+                    ("_NEnviarMensaje" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [3613 3635])
+                    ("_NPonCabecera" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pstcCabecera" variable
+                               (:pointer 1
+                                :type ("StcCabeceraMensaje" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3910 3943]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3892 3944])
+                    ("protected" label nil (reparse-symbol classsubparts) [3946 3956])
+                    ("m_pConfigurador" variable
+                       (:pointer 1
+                        :type ("CConfigurador" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3961 3992])
+                    ("m_pValores" variable
+                       (:pointer 1
+                        :type ("CValores" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4065 4086])
+                    ("m_pAppTimer" variable
+                       (:pointer 1
+                        :type ("CAppTimer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4175 4198])
+                    ("m_pInfof" variable
+                       (:pointer 1
+                        :type ("CInfof" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4260 4277])
+                    ("m_pAplicacionOwner" variable
+                       (:pointer 1
+                        :type ("CAppAnomalias" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4323 4357])
+                    ("m_bInvertir" variable (:type "bool") (reparse-symbol classsubparts) [4421 4438])
+                    ("m_nParamCiclosOk" variable (:type "int") (reparse-symbol classsubparts) [4493 4514])
+                    ("m_nParamCiclosErr" variable (:type "int") (reparse-symbol classsubparts) [4588 4610])
+                    ("m_nElemMp" variable (:type "int") (reparse-symbol classsubparts) [4684 4698])
+                    ("m_nEstado" variable (:type "int") (reparse-symbol classsubparts) [4757 4771])
+                    ("m_nCilosOk" variable (:type "int") (reparse-symbol classsubparts) [4809 4824])
+                    ("m_nCilosErr" variable (:type "int") (reparse-symbol classsubparts) [4899 4915]))                  
+                :type "class")
+                nil [599 4990]))          
+      :file "checker.h"
+      :pointmax 5017
+      :fsize 5016
+      :lastmodtime '(23613 53645 918415 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CCHECKER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("sstream" include (:system-flag t) nil [269 287])
+            ("fstream" include (:system-flag t) nil [288 306])
+            ("libsac/sac/netutils.h" include nil nil [318 350])
+            ("libsac/sac/convert.hpp" include nil nil [351 384])
+            ("canalDual_checker.h" include nil nil [386 416])
+            ("CCanalDualChecker" function
+               (:constructor-flag t
+                :parent "CCanalDualChecker"
+                :arguments 
+                  ( ("pConfigurador" variable
+                       (:pointer 1
+                        :type ("CConfigurador" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [455 484])
+                    ("pValores" variable
+                       (:pointer 1
+                        :type ("CValores" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [485 504])
+                    ("pAppTimer" variable
+                       (:pointer 1
+                        :type ("CAppTimer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [505 526])
+                    ("pInfof" variable
+                       (:pointer 1
+                        :type ("CInfof" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [527 542])
+                    ("pAppAnomalias" variable
+                       (:pointer 1
+                        :type ("CAppAnomalias" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [543 572]))                  
+                :type ("CCanalDualChecker" type (:type "class") nil nil))
+                nil [418 701])
+            ("CCanalDualChecker" function
+               (:destructor-flag t
+                :parent "CCanalDualChecker"
+                :type "void")
+                nil [703 746])
+            ("NConfigurar" function
+               (:parent "CCanalDualChecker"
+                :arguments 
+                  ( ("pXmlCfg" variable
+                       (:pointer 1
+                        :type ("CXmlConfigItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [783 808]))                  
+                :type "int")
+                nil [748 1807])
+            ("_NActualizaEstado" function
+               (:parent "CCanalDualChecker"
+                :type "int")
+                nil [1809 3106]))          
+      :file "canalDual_checker.cpp"
+      :pointmax 3107
+      :fsize 3106
+      :lastmodtime '(23613 53645 965906 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("libsac/sac/convert.hpp" include nil nil [254 287])
+            ("appAnomalias.h" include nil nil [303 328])
+            ("checker.h" include nil nil [330 350])
+            ("CChecker" function
+               (:constructor-flag t
+                :parent "CChecker"
+                :arguments 
+                  ( ("pConfigurador" variable
+                       (:pointer 1
+                        :type ("CConfigurador" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [371 400])
+                    ("pValores" variable
+                       (:pointer 1
+                        :type ("CValores" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [401 420])
+                    ("pAppTimer" variable
+                       (:pointer 1
+                        :type ("CAppTimer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [421 442])
+                    ("pInfof" variable
+                       (:pointer 1
+                        :type ("CInfof" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [443 458])
+                    ("pAppAnomalias" variable
+                       (:pointer 1
+                        :type ("CAppAnomalias" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [459 488]))                  
+                :type ("CChecker" type (:type "class") nil nil))
+                nil [352 771])
+            ("CChecker" function
+               (:destructor-flag t
+                :parent "CChecker"
+                :type "void")
+                nil [773 798])
+            ("NConfigurar" function
+               (:parent "CChecker"
+                :arguments 
+                  ( ("pXmlCfg" variable
+                       (:pointer 1
+                        :type ("CXmlConfigItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [826 851]))                  
+                :type "int")
+                nil [800 1499])
+            ("NDoWork" function
+               (:parent "CChecker"
+                :type "int")
+                nil [1501 1890])
+            ("_NProcessReturn" function
+               (:parent "CChecker"
+                :arguments 
+                  ( ("nValor" variable (:type "int") (reparse-symbol arg-sub-list) [1922 1933]))                  
+                :type "int")
+                nil [1892 2843])
+            ("_NInvierteValor" function
+               (:parent "CChecker"
+                :arguments 
+                  ( ("nValor" variable (:type "int") (reparse-symbol arg-sub-list) [2875 2886]))                  
+                :type "int")
+                nil [2845 2938])
+            ("_NEnviarMensaje" function
+               (:parent "CChecker"
+                :type "int")
+                nil [2940 5619])
+            ("_NPonCabecera" function
+               (:parent "CChecker"
+                :arguments 
+                  ( ("pstcCabecera" variable
+                       (:pointer 1
+                        :type ("StcCabeceraMensaje" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5649 5682]))                  
+                :type "int")
+                nil [5621 5979]))          
+      :file "checker.cpp"
+      :pointmax 5980
+      :fsize 5979
+      :lastmodtime '(23613 53645 927536 0)
+      :unmatched-syntax nil))
+  :file "!home!coco!workspace!UCS61850_UFD!src!bin!anomaliasHW!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

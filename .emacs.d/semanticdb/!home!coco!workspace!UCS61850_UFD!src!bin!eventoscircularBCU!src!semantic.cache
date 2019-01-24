@@ -1,0 +1,192 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("list" include (:system-flag t) nil [146 161])
+            ("cstdlib" include (:system-flag t) nil [162 180])
+            ("historicalregister.h" include nil nil [181 212])
+            ("libevents/event_msg_ANA.h" include nil nil [213 249])
+            ("libcommoniec61850/valores.h" include nil nil [250 288])
+            ("libutils/sactime.h" include nil nil [289 318])
+            ("libutils/xml_config.h" include nil nil [319 351])
+            ("VConfigureSignalResponse" function
+               (:prototype-flag t
+                :type "void")
+                nil [353 385])
+            ("VSignalHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nSignal" variable (:type "int") (reparse-symbol arg-sub-list) [406 418]))                  
+                :type "void")
+                nil [386 419])
+            ("oHistoricalRegister" variable (:type ("CHistoricalRegister" type (:type "class") nil nil)) nil [421 461])
+            ("pRegisterFile" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("FILE" type (:type "class") nil nil))
+                nil [462 489])
+            ("pIndexFile" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("FILE" type (:type "class") nil nil))
+                nil [490 514])
+            ("CHistoricalRegister" function
+               (:constructor-flag t
+                :parent "CHistoricalRegister"
+                :type ("CHistoricalRegister" type (:type "class") nil nil))
+                nil [516 1914])
+            ("CHistoricalRegister" function
+               (:destructor-flag t
+                :parent "CHistoricalRegister"
+                :type "void")
+                nil [1916 2060])
+            ("VShowLoadConfig" function
+               (:parent "CHistoricalRegister"
+                :type "void")
+                nil [2062 2626])
+            ("VSetPath" function
+               (:parent "CHistoricalRegister"
+                :arguments 
+                  ( ("strPath" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2663 2678]))                  
+                :type "void")
+                nil [2628 3240])
+            ("VSetRegisterFileName" function
+               (:parent "CHistoricalRegister"
+                :arguments 
+                  ( ("strRegisterFileName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3289 3316]))                  
+                :type "void")
+                nil [3242 3543])
+            ("VSetRegisterIndexFileName" function
+               (:parent "CHistoricalRegister"
+                :arguments 
+                  ( ("strRegisterIndexFileName" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3597 3629]))                  
+                :type "void")
+                nil [3545 3877])
+            ("StrEraseLeadingSlashes" function
+               (:parent "CHistoricalRegister"
+                :arguments 
+                  ( ("strSource" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3930 3954]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [3879 4214])
+            ("BRegisterEvent" function
+               (:parent "CHistoricalRegister"
+                :arguments 
+                  ( ("nSubstationElement" variable (:type "int") (reparse-symbol arg-sub-list) [4257 4280])
+                    ("strMessage" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4281 4298]))                  
+                :type "bool")
+                nil [4216 6652])
+            ("BRebuildRegisterIndexFile" function
+               (:parent "CHistoricalRegister"
+                :type "bool")
+                nil [6654 12109])
+            ("BIsSoonerThan" function
+               (:parent "CHistoricalRegister"
+                :arguments 
+                  ( ("stcTmOne" variable (:type ("tm" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [12151 12170])
+                    ("stcTimevalOne" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [12171 12200])
+                    ("stcTmTwo" variable (:type ("tm" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [12201 12220])
+                    ("stcTimevalTwo" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [12221 12250]))                  
+                :type "bool")
+                nil [12111 13131])
+            ("NGetCurrentRegisterIndex" function
+               (:parent "CHistoricalRegister"
+                :type "int")
+                nil [13133 14315])
+            ("NGetCurrentNumSecuencia" function
+               (:parent "CHistoricalRegister"
+                :type "int")
+                nil [14317 14399])
+            ("VUpdateNumSecuencia" function
+               (:parent "CHistoricalRegister"
+                :type "void")
+                nil [14401 14573])
+            ("NUpdateRegisterIndex" function
+               (:parent "CHistoricalRegister"
+                :arguments 
+                  ( ("nRegisterIndex" variable (:type "int") (reparse-symbol arg-sub-list) [14623 14642]))                  
+                :type "bool")
+                nil [14576 14994])
+            ("BWriteLine" function
+               (:parent "CHistoricalRegister"
+                :arguments 
+                  ( ("oHistoricalRecord" variable
+                       (:reference 1
+                        :type ("CHistoricalRecord" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15033 15070]))                  
+                :type "bool")
+                nil [14996 16759])
+            ("BStartLogging" function
+               (:parent "CHistoricalRegister"
+                :arguments 
+                  ( ("nAplicacion" variable (:type "int") (reparse-symbol arg-sub-list) [16801 16817])
+                    ("strColaRecepcion" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16818 16847])
+                    ("strColaEnvio" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16848 16873]))                  
+                :type "bool")
+                nil [16761 24708])
+            ("BTransformMsgToEvento" function
+               (:parent "CHistoricalRegister"
+                :arguments 
+                  ( ("nElemSub" variable (:type "int") (reparse-symbol arg-sub-list) [24758 24771])
+                    ("pIncidencia" variable
+                       (:pointer 1
+                        :type ("MENSINCI_STRUCT_MP" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24772 24804])
+                    ("pSacTime" variable
+                       (:pointer 1
+                        :type ("CSacTime" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24805 24824]))                  
+                :type "bool")
+                nil [24710 32312])
+            ("NGetNumCambios" function
+               (:parent "CHistoricalRegister"
+                :arguments 
+                  ( ("nMascaraCambios" variable (:type "int") (reparse-symbol arg-sub-list) [32354 32374]))                  
+                :type "int")
+                nil [32314 33101])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [33112 33121])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33122 33135]))                  
+                :type "int")
+                nil [33103 34128])
+            ("VConfigureSignalResponse" function (:type "void") nil [34130 34679])
+            ("VSignalHandler" function
+               (:arguments 
+                  ( ("nSignal" variable (:type "int") (reparse-symbol arg-sub-list) [34701 34713]))                  
+                :type "void")
+                nil [34681 35666]))          
+      :file "historicalregister.cpp"
+      :pointmax 35670
+      :fsize 35672
+      :lastmodtime '(23613 53655 134439 0)
+      :unmatched-syntax nil))
+  :file "!home!coco!workspace!UCS61850_UFD!src!bin!eventoscircularBCU!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

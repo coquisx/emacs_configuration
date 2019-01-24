@@ -1,0 +1,1084 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [456 475])
+            ("cmath" include (:system-flag t) nil [476 492])
+            ("algorithm" include (:system-flag t) nil [493 513])
+            ("vector" include (:system-flag t) nil [514 531])
+            ("libcommoniec61850/common.h" include nil nil [533 570])
+            ("libutils/claseentorno.h" include nil nil [571 605])
+            ("libutils/flag_arranque.h" include nil nil [606 641])
+            ("libutils/strings.h" include nil nil [642 671])
+            ("libutils/xml_config.h" include nil nil [672 704])
+            ("gestorinci.h" include nil nil [705 728])
+            ("msgHmiParser.h" include nil nil [729 754])
+            ("PRECISION" variable (:constant-flag t) nil [831 840])
+            ("TAM_LONG_LONG" variable (:constant-flag t) nil [858 871])
+            ("NUM_MAXIMO_TAM_LONG_LONG" variable (:constant-flag t) nil [907 931])
+            ("F_UMBRAL_INICIAL_FLOAT" variable (:constant-flag t) nil [1040 1062])
+            ("F_UMBRAL_MINIMO_FLOAT" variable (:constant-flag t) nil [1076 1097])
+            ("eEstadoOrden" type
+               (:members 
+                  ( ("ORDEN_APERTURA" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1181 1196])
+                    ("ORDEN_CIERRE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1197 1210]))                  
+                :type "enum")
+                nil [1162 1211])
+            ("CGestorInci" function
+               (:constructor-flag t
+                :parent "CGestorInci"
+                :arguments 
+                  ( ("pcPathBinarios" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1293 1327]))                  
+                :type ("CGestorInci" type (:type "class") nil nil))
+                nil [1268 2891])
+            ("CGestorInci" function
+               (:destructor-flag t
+                :parent "CGestorInci"
+                :type "void")
+                nil [2944 4860])
+            ("BInit" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("sErrorMsg" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4908 4931]))                  
+                :type "bool")
+                nil [4884 14978])
+            ("BGetEstadoTarea" function
+               (:parent "CGestorInci"
+                :type "bool")
+                nil [15039 15105])
+            ("VSetEstadoTarea" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("bActiva" variable (:type "bool") (reparse-symbol arg-sub-list) [15210 15223]))                  
+                :type "void")
+                nil [15176 15257])
+            ("VPrintTimeMessage" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("sMessage" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15320 15348]))                  
+                :type "void")
+                nil [15284 15719])
+            ("_toInt" function
+               (:arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15759 15782]))                  
+                :type "int")
+                nil [15748 15874])
+            ("_toFloat" function
+               (:arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15907 15930]))                  
+                :type "float")
+                nil [15892 16026])
+            ("_toStr" function
+               (:arguments 
+                  ( ("nValue" variable (:type "int") (reparse-symbol arg-sub-list) [16065 16076]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [16046 16157])
+            ("_toStr" function
+               (:arguments 
+                  ( ("dValue" variable (:type "double") (reparse-symbol arg-sub-list) [16194 16208]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [16175 16315])
+            ("_eTipoToEnum" function
+               (:arguments 
+                  ( ("eTipo" variable
+                       (:constant-flag t
+                        :type ("TiposMes" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16365 16386])
+                    ("nSesionInicial" variable (:type "int") (reparse-symbol arg-sub-list) [16387 16406]))                  
+                :type ("TiposVisualizacion" type (:type "class") nil nil))
+                nil [16333 16929])
+            ("_eChgValType" function
+               (:arguments 
+                  ( ("sValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16977 17003]))                  
+                :type ("ChgValType" type (:type "class") nil nil))
+                nil [16953 17769])
+            ("VTransformMsg" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("eTipo" variable (:type ("TiposMes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17826 17841])
+                    ("pInputMsg" variable
+                       (:pointer 1
+                        :type ("msgNotifSUPER" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17842 17867])
+                    ("pOutputMsg" variable
+                       (:pointer 1
+                        :type ("mesNOT_GESTOR_Visualizacion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17868 17908]))                  
+                :type "void")
+                nil [17793 19968])
+            ("BTransformMsg" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pInputMsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("msgNotifSUPER" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20026 20057])
+                    ("pOutputMsg" variable
+                       (:pointer 1
+                        :type ("T_MSG_CHG_VAL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20058 20084]))                  
+                :type "bool")
+                nil [19993 21764])
+            ("_VTratamientoSenyalesDuales" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21835 21853]))                  
+                :type "void")
+                nil [21789 25262])
+            ("BManageMsgAlive" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25335 25353]))                  
+                :type "bool")
+                nil [25301 28833])
+            ("DoWork" function
+               (:parent "CGestorInci"
+                :type "void")
+                nil [28859 47266])
+            ("BManageMsgRequestTrace" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47326 47344]))                  
+                :type "bool")
+                nil [47284 50151])
+            ("BManageMsgAcknowledgeTrace" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50231 50249]))                  
+                :type "bool")
+                nil [50185 52317])
+            ("_NGestionColaHmiE" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("stcMsgHmi" variable (:type ("ipcMENSAJES" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52511 52533]))                  
+                :type "int")
+                nil [52476 54904])
+            ("_NGestionColaHmiEstados" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("stcMsgHmi" variable (:type ("ipcMENSAJES" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55038 55060]))                  
+                :type "int")
+                nil [54997 56243])
+            ("_NGestionColaHmiAlarmas" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("stcMsgHmi" variable (:type ("ipcMENSAJES" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56404 56426]))                  
+                :type "int")
+                nil [56363 58514])
+            ("_BEsElementoValido" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElemSub" variable (:type "int") (reparse-symbol arg-sub-list) [58586 58599]))                  
+                :type "bool")
+                nil [58549 59388])
+            ("_BEsValorEventoCambiado" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcInci" variable
+                       (:pointer 1
+                        :type ("MENSINCI_STRUCT_MP" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59460 59489]))                  
+                :type "bool")
+                nil [59418 64233])
+            ("_BEsValorEventoCambiado" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcInci" variable
+                       (:pointer 1
+                        :type ("MENSBIGINCID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64311 64334]))                  
+                :type "bool")
+                nil [64269 65735])
+            ("_NGestionColaEventos" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65987 66008])
+                    ("bSendToRpc" variable (:type "bool") (reparse-symbol arg-sub-list) [66009 66025])
+                    ("bSendToMqEstados" variable (:type "bool") (reparse-symbol arg-sub-list) [66026 66048])
+                    ("bSendToServer" variable (:type "bool") (reparse-symbol arg-sub-list) [66049 66068]))                  
+                :type "int")
+                nil [65949 69693])
+            ("VMensBigIncid2EventoCambioEstado" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pInput" variable
+                       (:pointer 1
+                        :type ("MENSBIGINCID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69776 69797])
+                    ("pOutput" variable
+                       (:pointer 1
+                        :type ("EVENTO_CAMBIO_ESTADO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69798 69828]))                  
+                :type "void")
+                nil [69725 69947])
+            ("_NGestionColaEventosBig" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70189 70210]))                  
+                :type "int")
+                nil [70148 71485])
+            ("BInformarDeEvento" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcEstado" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71707 71731])
+                    ("sAcronimo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71732 71754])
+                    ("bEventoValor" variable (:type "bool") (reparse-symbol arg-sub-list) [71755 71773])
+                    ("bEventoMando" variable (:type "bool") (reparse-symbol arg-sub-list) [71774 71792]))                  
+                :type "bool")
+                nil [71671 79682])
+            ("BInformarDeAlarma" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcEstado" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79917 79941])
+                    ("sAcronimo" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79942 79964])
+                    ("bActiva" variable (:type "bool") (reparse-symbol arg-sub-list) [79965 79978])
+                    ("bAlarmaValor" variable (:type "bool") (reparse-symbol arg-sub-list) [79979 79997])
+                    ("bAlarmaMando" variable (:type "bool") (reparse-symbol arg-sub-list) [79998 80016]))                  
+                :type "bool")
+                nil [79881 84397])
+            ("BInformarHMI" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcEstado" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84600 84624]))                  
+                :type "bool")
+                nil [84569 85977])
+            ("BInformarHMI" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("eTipo" variable (:type ("TiposDestino" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86179 86198])
+                    ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86199 86217]))                  
+                :type "bool")
+                nil [86148 86564])
+            ("BInformarServidor" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcEstado" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86781 86805]))                  
+                :type "bool")
+                nil [86745 87775])
+            ("BInformarTelemando" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcEstado" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87990 88014]))                  
+                :type "bool")
+                nil [87953 96376])
+            ("BInformarAllTelemando" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96446 96467])
+                    ("pVecAliveEnviados" variable
+                       (:pointer 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [96468 96504]))                  
+                :type "bool")
+                nil [96406 97440])
+            ("BInformarMaqEstados" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcEstado" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [97671 97695]))                  
+                :type "bool")
+                nil [97633 98033])
+            ("BInformarPlc" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcEstado" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98238 98262]))                  
+                :type "bool")
+                nil [98207 98703])
+            ("BInformarExtern" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98914 98935]))                  
+                :type "bool")
+                nil [98880 99336])
+            ("BInformarGestor" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99554 99575]))                  
+                :type "bool")
+                nil [99520 99819])
+            ("BInformarFtp" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100030 100051]))                  
+                :type "bool")
+                nil [99999 100420])
+            ("BInformarEventos" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [100635 100656]))                  
+                :type "bool")
+                nil [100600 101045])
+            ("BInformarHMI_2" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101258 101279]))                  
+                :type "bool")
+                nil [101225 101578])
+            ("BInformarConfigurador" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101807 101828]))                  
+                :type "bool")
+                nil [101767 102292])
+            ("BInformarSincroUpdater" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [102530 102551]))                  
+                :type "bool")
+                nil [102489 102817])
+            ("_BCheckEventoImpulsional" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElemSub" variable (:type "int") (reparse-symbol arg-sub-list) [102999 103012]))                  
+                :type "bool")
+                nil [102956 103823])
+            ("STipoInciAString" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nTipoInci" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [104033 104057]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [103991 104130])
+            ("_SValorElemSubToString" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("stcInci" variable (:type ("MENSINCI_STRUCT_MP" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [104286 104313]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [104238 107537])
+            ("_SValorElemSubToString" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nIdElem" variable (:type "int") (reparse-symbol arg-sub-list) [107699 107711]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [107651 112371])
+            ("_BValidElemSub" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElemSub" variable (:type "int") (reparse-symbol arg-sub-list) [112438 112451]))                  
+                :type "bool")
+                nil [112405 112693])
+            ("_BCheckInformarTelemando" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcInci" variable
+                       (:pointer 1
+                        :type ("MENSBIGINCID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112762 112785]))                  
+                :type "bool")
+                nil [112719 112911])
+            ("_BCheckInformarTelemando" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcInci" variable
+                       (:pointer 1
+                        :type ("MENSINCI_STRUCT_MP" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112990 113019]))                  
+                :type "bool")
+                nil [112947 113756])
+            ("_BCheckInformarHMI" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcInci" variable
+                       (:pointer 1
+                        :type ("MENSBIGINCID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113829 113852]))                  
+                :type "bool")
+                nil [113792 113972])
+            ("_BCheckInformarHMI" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcInci" variable
+                       (:pointer 1
+                        :type ("MENSINCI_STRUCT_MP" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114039 114068]))                  
+                :type "bool")
+                nil [114002 114691])
+            ("_BCheckInformarServidor" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcInci" variable
+                       (:pointer 1
+                        :type ("MENSBIGINCID" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114762 114785]))                  
+                :type "int")
+                nil [114721 114911])
+            ("_BCheckInformarServidor" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcInci" variable
+                       (:pointer 1
+                        :type ("MENSINCI_STRUCT_MP" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114987 115016]))                  
+                :type "int")
+                nil [114946 115265])
+            ("_BCheckInformarMaqEstados" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcInci" variable
+                       (:pointer 1
+                        :type ("MENSINCI_STRUCT_MP" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [115344 115373]))                  
+                :type "bool")
+                nil [115300 115537])
+            ("_VActualizaUmbral" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElemSub" variable (:type "int") (reparse-symbol arg-sub-list) [115610 115623])
+                    ("dValor" variable (:type "double") (reparse-symbol arg-sub-list) [115624 115638]))                  
+                :type "void")
+                nil [115574 117154])
+            ("_BAlarmaActiva" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElem" variable (:type "int") (reparse-symbol arg-sub-list) [117303 117313])
+                    ("hValor" variable (:type "short") (reparse-symbol arg-sub-list) [117314 117327])
+                    ("pbAlarmaValor" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [117328 117348])
+                    ("psAcro" variable
+                       (:pointer 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117349 117369]))                  
+                :type "bool")
+                nil [117270 118854])
+            ("_SGeneraEvento" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElemSub" variable (:type "int") (reparse-symbol arg-sub-list) [118920 118933])
+                    ("pGeneraEvento" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [118934 118954])
+                    ("shValor" variable (:type "short") (reparse-symbol arg-sub-list) [118955 118969]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [118880 119635])
+            ("_NGetElemSubValue" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElem" variable (:type "int") (reparse-symbol arg-sub-list) [119816 119826])
+                    ("pDataVal" variable
+                       (:pointer 1
+                        :type ("VALUE_ELEMENT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [119827 119851]))                  
+                :type "int")
+                nil [119781 119913])
+            ("_GetElemSubShared" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElem" variable (:type "int") (reparse-symbol arg-sub-list) [120846 120856])
+                    ("pElem" variable
+                       (:pointer 1
+                        :type ("VELEMSUB" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120857 120873]))                  
+                :type "int")
+                nil [120811 121118])
+            ("_NGetNDespachos" function
+               (:parent "CGestorInci"
+                :type "int")
+                nil [121128 121608])
+            ("_NGetTipoProtocoloAplicDesp" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nDespacho" variable (:type "int") (reparse-symbol arg-sub-list) [121655 121669]))                  
+                :type "int")
+                nil [121610 122203])
+            ("_NGetAplicDesp" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nDespacho" variable (:type "int") (reparse-symbol arg-sub-list) [122257 122271]))                  
+                :type ("ID_APLICACION_IEC_61850" type (:type "class") nil nil))
+                nil [122205 122421])
+            ("_NGetAplicElem" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElemento" variable (:type "int") (reparse-symbol arg-sub-list) [122475 122489]))                  
+                :type ("ID_APLICACION_IEC_61850" type (:type "class") nil nil))
+                nil [122423 122651])
+            ("_NGetAplicDesp" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElemento" variable (:type "int") (reparse-symbol arg-sub-list) [122685 122699])
+                    ("nIndex" variable (:type "int") (reparse-symbol arg-sub-list) [122700 122711])
+                    ("stIdAplicacion" variable
+                       (:reference 1
+                        :type ("ID_APLICACION_IEC_61850" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122712 122752]))                  
+                :type "int")
+                nil [122653 123220])
+            ("_NGetNAplicDesp" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nDespacho" variable (:type "int") (reparse-symbol arg-sub-list) [123255 123269]))                  
+                :type "int")
+                nil [123222 123923])
+            ("_NGetNAplicDesp" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElemento" variable (:type "int") (reparse-symbol arg-sub-list) [123958 123972])
+                    ("nIndexDespAsoc" variable (:type "int") (reparse-symbol arg-sub-list) [123973 123992]))                  
+                :type "int")
+                nil [123925 124445])
+            ("_NGetNDespAsocs" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElemento" variable (:type "int") (reparse-symbol arg-sub-list) [124480 124494]))                  
+                :type "int")
+                nil [124447 125030])
+            ("BLanzaMultiDesp" function
+               (:parent "CGestorInci"
+                :type "bool")
+                nil [125032 130660])
+            ("NLanzarProceso" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("szProceso" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [130694 130716])
+                    ("szTipoProceso" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [130717 130743])
+                    ("nNumSecuencia" variable (:type "int") (reparse-symbol arg-sub-list) [130774 130792])
+                    ("szNombreColaSend" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [130793 130822])
+                    ("szNombreColaRecv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [130853 130882]))                  
+                :type "int")
+                nil [130662 132349])
+            ("BLanzarProceso" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("szProceso" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132384 132406])
+                    ("szTipoProceso" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132407 132433])
+                    ("nNumSecuencia" variable (:type "int") (reparse-symbol arg-sub-list) [132464 132482])
+                    ("szNombreColaSend" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132483 132512])
+                    ("szNombreColaRecv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [132543 132572]))                  
+                :type "bool")
+                nil [132351 133580])
+            ("_BExisteProceso" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("stProceso" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133617 133646]))                  
+                :type "bool")
+                nil [133582 134511])
+            ("NPonCabecera" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pstcCabecera" variable
+                       (:pointer 1
+                        :type ("StcCabeceraMensaje" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134543 134576])
+                    ("nElementoMp" variable (:type "int") (reparse-symbol arg-sub-list) [134577 134593])
+                    ("nDespacho" variable (:type "int") (reparse-symbol arg-sub-list) [134594 134608]))                  
+                :type "int")
+                nil [134513 135421])
+            ("NPonCabecera" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pstcCabecera" variable
+                       (:pointer 1
+                        :type ("StcCabeceraMensaje" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135453 135486])
+                    ("nElementoMp" variable (:type "int") (reparse-symbol arg-sub-list) [135487 135503]))                  
+                :type "int")
+                nil [135423 136265])
+            ("BManageMsgReboot" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136303 136327]))                  
+                :type "bool")
+                nil [136267 137416])
+            ("BManageAutomaticConmutation" function
+               (:parent "CGestorInci"
+                :type "bool")
+                nil [137418 139487])
+            ("NManageFileReady" function
+               (:parent "CGestorInci"
+                :type "int")
+                nil [139489 139981])
+            ("VCommandOperativeConmutation" function
+               (:parent "CGestorInci"
+                :type "bool")
+                nil [139983 140202])
+            ("BManageManualConmutation" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [140247 140268]))                  
+                :type "bool")
+                nil [140204 142098])
+            ("BConmutateState" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nEstado" variable (:type "int") (reparse-symbol arg-sub-list) [142134 142146]))                  
+                :type "bool")
+                nil [142100 143480])
+            ("BInformarConmutateState" function
+               (:parent "CGestorInci"
+                :type "bool")
+                nil [143482 146514])
+            ("BInformarDespachoDual" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [146556 146577]))                  
+                :type "bool")
+                nil [146516 147572])
+            ("NTiposEstado2ValorSenyal" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nEstado" variable (:type ("tiposEstado" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147627 147647]))                  
+                :type ("VALUE_ELEMENT" type (:type "class") nil nil))
+                nil [147574 148636])
+            ("NValorSenyal2TiposEstado" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nEstado" variable (:type "int") (reparse-symbol arg-sub-list) [148689 148701]))                  
+                :type ("tiposEstado" type (:type "class") nil nil))
+                nil [148638 149270])
+            ("VSetElemEstadoEquipo" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nEstadoMActual" variable (:type ("tiposEstado" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149311 149338])
+                    ("nEstadoMRemota" variable (:type ("tiposEstado" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149339 149366]))                  
+                :type "void")
+                nil [149272 149879])
+            ("VSetElemEstadoDualidad" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("bEstado" variable (:type "bool") (reparse-symbol arg-sub-list) [149950 149963]))                  
+                :type "void")
+                nil [149909 150316])
+            ("VSetElemVersionEquipoRemota" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("sConfigRev" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [150394 150424]))                  
+                :type "void")
+                nil [150348 150685])
+            ("VSetElemParamRevEquipoRemota" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nValue" variable (:type "int") (reparse-symbol arg-sub-list) [150769 150780]))                  
+                :type "void")
+                nil [150722 151124])
+            ("BManageMsgEstadoRpc" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [151194 151218]))                  
+                :type "bool")
+                nil [151156 153310])
+            ("BManageMsgPeticionEstadoRpc" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [153386 153410]))                  
+                :type "bool")
+                nil [153339 153894])
+            ("BManageMsgConfigEquipoRem" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [153976 154000]))                  
+                :type "bool")
+                nil [153931 156707])
+            ("BManageEventOfStatusChange" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElement" variable (:type "int") (reparse-symbol arg-sub-list) [156787 156800])
+                    ("stcInValue" variable
+                       (:reference 1
+                        :type ("VALUE_ELEMENT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [156801 156827])
+                    ("bSendToServer" variable (:type "bool") (reparse-symbol arg-sub-list) [156828 156847]))                  
+                :type "bool")
+                nil [156742 159231])
+            ("BManageEventOfStatusChangeForzar" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElement" variable (:type "int") (reparse-symbol arg-sub-list) [159319 159332])
+                    ("stcInValue" variable
+                       (:reference 1
+                        :type ("VALUE_ELEMENT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [159333 159359])
+                    ("bSendToServer" variable (:type "bool") (reparse-symbol arg-sub-list) [159360 159379]))                  
+                :type "bool")
+                nil [159268 161707])
+            ("BManageEventOfStatusChange" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElement" variable (:type "int") (reparse-symbol arg-sub-list) [161794 161807])
+                    ("nValue" variable (:type "int") (reparse-symbol arg-sub-list) [161808 161819]))                  
+                :type "bool")
+                nil [161749 162309])
+            ("BManageEventOfStatusChange" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElement" variable (:type "int") (reparse-symbol arg-sub-list) [162390 162403])
+                    ("sValue" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [162404 162430])
+                    ("shQuality" variable (:type "short") (reparse-symbol arg-sub-list) [162431 162447]))                  
+                :type "bool")
+                nil [162345 164464])
+            ("BManageMsgChgVal" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [164535 164559]))                  
+                :type "bool")
+                nil [164500 168412])
+            ("BManageMsgChgAck" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [168473 168497]))                  
+                :type "bool")
+                nil [168438 170502])
+            ("VFillChgValMsg" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [170561 170585])
+                    ("stcMsg" variable
+                       (:reference 1
+                        :type ("T_MSG_CHG_VAL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [170586 170608])
+                    ("eChgOrigen" variable (:type ("ChgOrigen" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [170609 170630]))                  
+                :type "void")
+                nil [170528 170910])
+            ("BFillChgValHmiMsg" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [170970 170994])
+                    ("stcMsg" variable
+                       (:reference 1
+                        :type ("T_MSG_CHG_VAL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [170995 171017]))                  
+                :type "bool")
+                nil [170934 171307])
+            ("_NGetTipoEvento" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nIdElem" variable (:type "int") (reparse-symbol arg-sub-list) [171391 171403]))                  
+                :type ("TipoMascaraSeleccionMensaje" type (:type "class") nil nil))
+                nil [171334 172278])
+            ("BHayDespachoSeleccionTipoMensaje" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nIdElem" variable (:type "int") (reparse-symbol arg-sub-list) [172355 172367]))                  
+                :type "bool")
+                nil [172303 172586])
+            ("_CCalculaMascaraGeneral" function
+               (:parent "CGestorInci"
+                :type "char")
+                nil [172628 173723])
+            ("BManageMsgTrazabilidad" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [173800 173824]))                  
+                :type "bool")
+                nil [173758 176241])
+            ("BCheckInformarAlarma" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcInci" variable
+                       (:pointer 1
+                        :type ("MENSINCI_STRUCT_MP" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [176313 176342]))                  
+                :type "bool")
+                nil [176273 177134])
+            ("BInformarDeAlarma" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcEstado" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [177362 177386]))                  
+                :type "bool")
+                nil [177326 177716])
+            ("BInformarCliente" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcEstado" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [177937 177961]))                  
+                :type "bool")
+                nil [177902 178271])
+            ("BManageMsgAckConfigurador" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [178343 178361]))                  
+                :type "bool")
+                nil [178299 178821])
+            ("BManageMsgTemporizadorVencido" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [178906 178924]))                  
+                :type "bool")
+                nil [178858 179148])
+            ("BInformarDisplay" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pStcMsg" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [179224 179245]))                  
+                :type "bool")
+                nil [179189 179628])
+            ("VSetElemEstadoUCS" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nEstadoMActual" variable (:type ("tiposEstado" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179692 179719])
+                    ("nEstadoMRemota" variable (:type ("tiposEstado" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179720 179747]))                  
+                :type "void")
+                nil [179656 180475])
+            ("BIniciarSenyalesPropias" function
+               (:parent "CGestorInci"
+                :type "bool")
+                nil [180504 182316])
+            ("_NGestionColaHmiSimulacion" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("stcMsgHmi" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [182467 182496]))                  
+                :type "int")
+                nil [182423 183013])
+            ("BManageMsgPeticionSimulacion" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("pMsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [183098 183122]))                  
+                :type "bool")
+                nil [183050 183321])
+            ("BEsDestinoLocal" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nElem" variable (:type "int") (reparse-symbol arg-sub-list) [183392 183402]))                  
+                :type "bool")
+                nil [183358 183612])
+            ("BEsAplicacionEsclavo" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("nAplicacion" variable (:type "int") (reparse-symbol arg-sub-list) [183677 183693]))                  
+                :type "bool")
+                nil [183638 184254])
+            ("_NGestionColaHmiMandoPosible" function
+               (:parent "CGestorInci"
+                :arguments 
+                  ( ("stcMsgHmi" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [184420 184449]))                  
+                :type "int")
+                nil [184374 185440])
+            ("LoadCfgFile" function
+               (:parent "CGestorInci"
+                :type "bool")
+                nil [185480 186629]))          
+      :file "gestorinci.cpp"
+      :pointmax 186651
+      :fsize 186654
+      :lastmodtime '(23613 53646 359053 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PRECISION" . ((number "2" 847 . 848)))
+          ("F_UMBRAL_MINIMO_FLOAT" . ((number "0.009" 1100 . 1105)))
+          ("TAM_LONG_LONG" . ((number "22" 872 . 874)))
+          ("F_UMBRAL_INICIAL_FLOAT" . ((number "1.0" 1064 . 1067)))
+          ("NUM_MAXIMO_TAM_LONG_LONG" . 
+              ((symbol "pow" 932 . 935) (semantic-list "(10,TAM_LONG_LONG-2)" 935 . 955) (punctuation "-" 955 . 956) (number "1" 956 . 957)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "gestorinci.h"
+      :fsize 21758
+      :lastmodtime '(23613 53646 309684 0))
+    (semanticdb-table "semanticdb-table"
+      :file "msgHmiParser.h"
+      :fsize 2293
+      :lastmodtime '(23613 53646 311534 0)))
+  :file "!home!coco!workspace!UCS61850_UFD!src!bin!incidencias!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

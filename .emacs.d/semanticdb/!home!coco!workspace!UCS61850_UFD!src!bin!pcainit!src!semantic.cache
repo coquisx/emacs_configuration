@@ -1,0 +1,305 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [496 515])
+            ("pcainit.h" include nil nil [518 538])
+            ("libutils/infof.h" include nil nil [539 566])
+            ("sys/types.h" include (:system-flag t) nil [568 590])
+            ("unistd.h" include (:system-flag t) nil [591 610])
+            ("nIdMem" variable (:type "int") nil [613 624])
+            ("VStopValMem" function
+               (:arguments 
+                  ( ("nSig" variable (:type "int") (reparse-symbol arg-sub-list) [645 654]))                  
+                :type "void")
+                nil [628 758])
+            ("to_lower" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [796 803]))                  
+                :type "char")
+                nil [781 930])
+            ("NConvertToNumber" function
+               (:arguments 
+                  ( ("sValue" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [954 973]))                  
+                :type "int")
+                nil [932 1254])
+            ("VPrintHelp" function (:type "void") nil [1256 4449])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4460 4469])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4470 4482]))                  
+                :type "int")
+                nil [4451 9732]))          
+      :file "main.cpp"
+      :pointmax 9735
+      :fsize 9737
+      :lastmodtime '(23613 53644 939599 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PCA_INIT_H" variable (:constant-flag t) nil [28 38])
+            ("libutils/infof.h" include nil nil [40 67])
+            ("libcommoniec61850/common.h" include nil nil [68 105])
+            ("libcommoniec61850/valores.h" include nil nil [106 144])
+            ("libcommoniec61850/configurador.h" include nil nil [145 188])
+            ("libutils/xml_util.h" include nil nil [189 219])
+            ("algorithm" include (:system-flag t) nil [221 241])
+            ("vector" include (:system-flag t) nil [242 259])
+            ("signal.h" include (:system-flag t) nil [260 279])
+            ("E_BINNOTHEA" variable (:constant-flag t) nil [289 300])
+            ("E_HEALTH" variable (:constant-flag t) nil [325 333])
+            ("E_BEHAVIOUR" variable (:constant-flag t) nil [352 363])
+            ("E_CONLOCAL2" variable (:constant-flag t) nil [379 390])
+            ("E_COUNTER" variable (:constant-flag t) nil [415 424])
+            ("E_CHLIV" variable (:constant-flag t) nil [442 449])
+            ("E_REDCHLIV" variable (:constant-flag t) nil [468 478])
+            ("E_MOD" variable (:constant-flag t) nil [499 504])
+            ("E_ERRP" variable (:constant-flag t) nil [525 531])
+            ("E_LOCSTA" variable (:constant-flag t) nil [612 620])
+            ("E_ESCMODCAL" variable (:constant-flag t) nil [655 666])
+            ("E_FALLOCONF" variable (:constant-flag t) nil [707 718])
+            ("E_DESLGAPC" variable (:constant-flag t) nil [760 770])
+            ("E_RFLO" variable (:constant-flag t) nil [805 811])
+            ("ANILLOFO" variable (:constant-flag t) nil [842 850])
+            ("E_CSWI" variable (:constant-flag t) nil [874 880])
+            ("E_UFDDESL" variable (:constant-flag t) nil [897 906])
+            ("CDC_NODEF" variable (:constant-flag t) nil [931 940])
+            ("CDC_ENS" variable (:constant-flag t) nil [960 967])
+            ("CDC_SPC" variable (:constant-flag t) nil [985 992])
+            ("CDC_DPC" variable (:constant-flag t) nil [1010 1017])
+            ("CDC_SPS" variable (:constant-flag t) nil [1035 1042])
+            ("CDC_BCR" variable (:constant-flag t) nil [1060 1067])
+            ("DEF_VALUE" variable (:constant-flag t) nil [1087 1096])
+            ("DEF_QUALITY" variable (:constant-flag t) nil [1107 1118])
+            ("StructInit" type
+               (:members 
+                  ( ("sElementValue" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1143 1169])
+                    ("eCDC" variable (:type ("tiposCDC" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1171 1185])
+                    ("nValue" variable (:type "int") (reparse-symbol classsubparts) [1187 1198])
+                    ("nQuality" variable (:type "int") (reparse-symbol classsubparts) [1200 1213])
+                    ("sExtraString" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1215 1240])
+                    ("StructInit" function
+                       (:constructor-flag t
+                        :type ("StructInit" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1242 1375]))                  
+                :type "struct")
+                nil [1122 1383])
+            ("CPcaInit" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1405 1412])
+                    ("CPcaInit" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CPcaInit" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1414 1425])
+                    ("CPcaInit" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1427 1439])
+                    ("InitValues" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v_values" variable
+                               (:pointer 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("StructInit" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1655 1689])
+                            ("bEnclav" variable (:type "bool") (reparse-symbol arg-sub-list) [1690 1703])
+                            ("nValue" variable (:type "int") (reparse-symbol arg-sub-list) [1704 1715])
+                            ("nQuality" variable (:type "int") (reparse-symbol arg-sub-list) [1716 1729]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1640 1730])
+                    ("VInit" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nIdMem" variable (:type "int") (reparse-symbol arg-sub-list) [1744 1755])
+                            ("inf" variable
+                               (:pointer 1
+                                :type ("CInfof" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1756 1768]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1733 1769])
+                    ("VLoadTimeZone" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1771 1792])
+                    ("private" label nil (reparse-symbol classsubparts) [1793 1801])
+                    ("m_oInfof" variable
+                       (:pointer 1
+                        :type ("CInfof" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1803 1820])
+                    ("m_nIdMem" variable (:type "int") (reparse-symbol classsubparts) [1822 1835])
+                    ("m_pValores" variable
+                       (:pointer 1
+                        :type ("CValores" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1837 1858])
+                    ("m_pConfigurador" variable
+                       (:pointer 1
+                        :type ("CConfigurador" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1860 1891])
+                    ("InitFunction" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nElem" variable (:type "int") (reparse-symbol arg-sub-list) [1910 1920])
+                            ("nValue" variable (:type "int") (reparse-symbol arg-sub-list) [1921 1932])
+                            ("nQuality" variable (:type "int") (reparse-symbol arg-sub-list) [1933 1946]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1893 1947])
+                    ("InitEnclav" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nElem" variable (:type "int") (reparse-symbol arg-sub-list) [1964 1974])
+                            ("nValue" variable (:type "int") (reparse-symbol arg-sub-list) [1975 1986])
+                            ("nQuality" variable (:type "int") (reparse-symbol arg-sub-list) [1987 2000])
+                            ("vValueElements" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2001 2033]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1949 2034]))                  
+                :type "class")
+                nil [1387 2037]))          
+      :file "pcainit.h"
+      :pointmax 2047
+      :fsize 2041
+      :lastmodtime '(23613 53644 940955 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("E_MOD" . ((string "\".Mod[ST]\"" 506 . 516)))
+          ("E_CSWI" . ((string "\"CSWI\"" 882 . 888)))
+          ("E_LOCSTA" . ((string "\"GENERAL/LLN0.LocSta[ST]\"" 621 . 646)))
+          ("E_RFLO" . ((string "\"RFLO1.FltDiskm[MX]\"" 813 . 833)))
+          ("CDC_SPC" . ((symbol "CDC_SPC" 994 . 1001)))
+          ("DEF_QUALITY" . ((number "0" 1119 . 1120)))
+          ("E_CHLIV" . ((string "\".ChLiv\"" 451 . 459)))
+          ("E_DESLGAPC" . ((string "\"DeslastreGAPC1.Auto[ST]\"" 771 . 796)))
+          ("CDC_ENS" . ((symbol "CDC_ENS" 969 . 976)))
+          ("E_BINNOTHEA" . ((string "\".UFDBinNOTHea\"" 301 . 316)))
+          ("E_CONLOCAL2" . ((string "\".UFDConLocal2\"" 391 . 406)))
+          ("E_ESCMODCAL" . ((string "\"GENERAL/LLN0.UFDEscModCal[ST]\"" 667 . 698)))
+          ("CDC_SPS" . ((symbol "CDC_SPS" 1044 . 1051)))
+          ("E_UFDDESL" . ((string "\".UFDDesl[ST]\"" 907 . 921)))
+          ("E_BEHAVIOUR" . ((string "\".Beh\"" 364 . 370)))
+          ("E_REDCHLIV" . ((string "\".RedChLiv\"" 479 . 490)))
+          ("CDC_NODEF" . ((symbol "CDC_NODEF" 941 . 950)))
+          ("CDC_BCR" . ((symbol "CDC_BCR" 1069 . 1076)))
+          ("E_HEALTH" . ((string "\".Health\"" 334 . 343)))
+          ("E_COUNTER" . ((string "\".CntRs\"" 425 . 433)))
+          ("DEF_VALUE" . ((number "1" 1097 . 1098)))
+          ("PCA_INIT_H")
+          ("E_FALLOCONF" . ((string "\"GENERAL/LLN0.UFDFalloConf[ST]\"" 719 . 750)))
+          ("CDC_DPC" . ((symbol "CDC_DPC" 1019 . 1026)))
+          ("E_ERRP" . ((string "\".UFDErrorProt[ST]\"" 533 . 552)))
+          ("ANILLOFO" . ((string "\"AnilloFOLCCH\"" 851 . 865)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("pcainit.h" include nil nil [3 23])
+            ("libcommoniec61850/common.h" include nil nil [24 61])
+            ("libcommoniec61850/commonbd.h" include nil nil [62 101])
+            ("libtypes61850/types.h" include nil nil [102 134])
+            ("libutils/sactime.h" include nil nil [135 164])
+            ("libutils/filetools.h" include nil nil [165 196])
+            ("stdio.h" include (:system-flag t) nil [197 215])
+            ("string" include (:system-flag t) nil [216 233])
+            ("sys/types.h" include (:system-flag t) nil [234 256])
+            ("unistd.h" include (:system-flag t) nil [257 276])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [278 298])
+            ("CUSTOM_TIME_ZONE" variable (:constant-flag t) nil [308 324])
+            ("DEF_VALUE" variable (:constant-flag t) nil [347 356])
+            ("DEF_QUALITY" variable (:constant-flag t) nil [367 378])
+            ("REF_REMOTA" variable (:constant-flag t) nil [473 483])
+            ("CPcaInit" function
+               (:constructor-flag t
+                :parent "CPcaInit"
+                :type ("CPcaInit" type (:type "class") nil nil))
+                nil [498 568])
+            ("CPcaInit" function
+               (:destructor-flag t
+                :parent "CPcaInit"
+                :type "void")
+                nil [571 688])
+            ("VInit" function
+               (:parent "CPcaInit"
+                :arguments 
+                  ( ("nIdMem" variable (:type "int") (reparse-symbol arg-sub-list) [711 722])
+                    ("inf" variable
+                       (:pointer 1
+                        :type ("CInfof" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [723 735]))                  
+                :type "void")
+                nil [690 856])
+            ("InitValues" function
+               (:parent "CPcaInit"
+                :arguments 
+                  ( ("v_values" variable
+                       (:pointer 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("StructInit" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [883 917])
+                    ("bEnclav" variable (:type "bool") (reparse-symbol arg-sub-list) [918 931])
+                    ("nValue" variable (:type "int") (reparse-symbol arg-sub-list) [932 943])
+                    ("nQuality" variable (:type "int") (reparse-symbol arg-sub-list) [944 957]))                  
+                :type "int")
+                nil [858 4068])
+            ("InitFunction" function
+               (:parent "CPcaInit"
+                :arguments 
+                  ( ("nElem" variable (:type "int") (reparse-symbol arg-sub-list) [4097 4107])
+                    ("nValue" variable (:type "int") (reparse-symbol arg-sub-list) [4108 4119])
+                    ("nQuality" variable (:type "int") (reparse-symbol arg-sub-list) [4120 4133]))                  
+                :type "int")
+                nil [4070 4956])
+            ("InitEnclav" function
+               (:parent "CPcaInit"
+                :arguments 
+                  ( ("nElem" variable (:type "int") (reparse-symbol arg-sub-list) [4983 4993])
+                    ("nValue" variable (:type "int") (reparse-symbol arg-sub-list) [4994 5005])
+                    ("nQuality" variable (:type "int") (reparse-symbol arg-sub-list) [5006 5019])
+                    ("vValueElements" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5020 5052]))                  
+                :type "int")
+                nil [4958 10996])
+            ("VLoadTimeZone" function
+               (:parent "CPcaInit"
+                :type "void")
+                nil [11410 12851]))          
+      :file "pcainit.cpp"
+      :pointmax 12853
+      :fsize 12884
+      :lastmodtime '(23613 53644 937603 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEF_QUALITY" . ((number "0" 379 . 380)))
+          ("REF_REMOTA" . ((string "\"O_GENERAL/\"" 484 . 496)))
+          ("CUSTOM_TIME_ZONE" . ((string "\"Etc/Arteche\"" 325 . 338)))
+          ("DEF_VALUE" . ((number "1" 357 . 358)))
+          )
+))
+  :file "!home!coco!workspace!UCS61850_UFD!src!bin!pcainit!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

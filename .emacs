@@ -14,6 +14,7 @@
 ;; Function to load all *.el files in emacs directory
 (load "~/.emacs.d/init.el")
 (load "~/.emacs.d/custom-helm-projectile-config.el")
+(load "~/.emacs.d/custom-semantic-config.el")
 (load "~/.emacs.d/custom-sr-speedbar-config.el")
 (load "~/.emacs.d/cplusplus-mode.el")
 (load "~/.emacs.d/custom-ggtags-config.el")
@@ -27,7 +28,9 @@
    [default default default italic underline success warning error])
  '(inhibit-startup-screen t)
  '(initial-buffer-choice nil)
- '(package-selected-packages (quote (ggtags helm-projectile projectile sr-speedbar)))
+ '(package-selected-packages
+   (quote
+    (stickyfunc-enhance ggtags helm-projectile projectile sr-speedbar)))
  '(sr-speedbar-right-side nil)
  '(sr-speedbar-width 15 t))
 

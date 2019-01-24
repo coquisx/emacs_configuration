@@ -1,0 +1,250 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("aplicacion101.h" include nil nil [589 615])
+            ("unistd.h" include (:system-flag t) nil [632 651])
+            ("stdio.h" include (:system-flag t) nil [653 671])
+            ("libutils/infof.h" include nil nil [720 747])
+            ("layers/puertoserielinux.h" include nil nil [749 785])
+            ("libcommoniec61850/commcnfg_iec_61850.h" include nil nil [786 835])
+            ("libcommoniec61850/configurador.h" include nil nil [836 879])
+            ("libipcmes/ipcmensajes.h" include nil nil [880 914])
+            ("CLoadReport.h" include nil nil [956 980])
+            ("CMiniLog.h" include nil nil [981 1002])
+            ("sac_minilog" using (:type ("sac_minilog" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1004 1032])
+            ("D_DEFAULT_SESION_MODO" variable (:constant-flag t) nil [1042 1063])
+            ("CAplicacion101" function
+               (:constructor-flag t
+                :parent "CAplicacion101"
+                :arguments 
+                  ( ("nId" variable (:type "int") (reparse-symbol arg-sub-list) [1191 1199])
+                    ("szNombreColaSend" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1200 1229])
+                    ("szNombreColaRecv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1262 1291])
+                    ("pcNombreProcesoParaCommon" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1324 1356]))                  
+                :type ("CAplicacion101" type (:type "class") nil nil))
+                nil [1160 2365])
+            ("CAplicacion101" function
+               (:destructor-flag t
+                :parent "CAplicacion101"
+                :type "void")
+                nil [2366 2495])
+            ("NGetCommonId" function
+               (:parent "CAplicacion101"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2530 2535]))                  
+                :type "int")
+                nil [2497 2555])
+            ("NAddCanal" function
+               (:parent "CAplicacion101"
+                :arguments 
+                  ( ("pCanal101" variable
+                       (:pointer 1
+                        :type ("CCanal101" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2586 2607]))                  
+                :type "int")
+                nil [2556 3248])
+            ("PGetSesion" function
+               (:pointer 1
+                :parent "CAplicacion101"
+                :arguments 
+                  ( ("clientIndex" variable (:type ("TMWDEFS_USHORT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3289 3316]))                  
+                :type ("CSesion101" type (:type "class") nil nil))
+                nil [3250 4082])
+            ("PGetSector" function
+               (:pointer 1
+                :parent "CAplicacion101"
+                :arguments 
+                  ( ("clientIndex" variable (:type ("TMWDEFS_USHORT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4123 4150])
+                    ("sectorIndex" variable (:type ("TMWDEFS_USHORT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4151 4178]))                  
+                :type ("CSector101" type (:type "class") nil nil))
+                nil [4084 4641])
+            ("VChequearEntrada" function
+               (:parent "CAplicacion101"
+                :type "void")
+                nil [4644 5583])
+            ("NInicializarComunicacion" function
+               (:parent "CAplicacion101"
+                :type "int")
+                nil [5587 6331])
+            ("NPararComunicacion" function
+               (:parent "CAplicacion101"
+                :type "int")
+                nil [6333 6620])
+            ("NAlarmaInternaEnAplicacion" function
+               (:parent "CAplicacion101"
+                :arguments 
+                  ( ("pStcMensaje" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6670 6695]))                  
+                :type "int")
+                nil [6623 7043])
+            ("BfnDataInit" function
+               (:parent "CAplicacion101"
+                :arguments 
+                  ( ("causeOfInit" variable (:type ("TMWDEFS_COI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7087 7111]))                  
+                :type ("TMWDEFS_BOOL" type (:type "class") nil nil))
+                nil [7046 7435])
+            ("BfnDataClose" function
+               (:parent "CAplicacion101"
+                :arguments 
+                  ( ("causeOfInit" variable (:type ("TMWDEFS_COI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7479 7503]))                  
+                :type ("TMWDEFS_BOOL" type (:type "class") nil nil))
+                nil [7437 7827])
+            ("NConfigurarAplicacion" function
+               (:parent "CAplicacion101"
+                :type "int")
+                nil [7830 19928])
+            ("CConexionProcesoGestor101" function
+               (:constructor-flag t
+                :parent "CAplicacion101::CConexionProcesoGestor101"
+                :arguments 
+                  ( ("nIdent" variable (:type "int") (reparse-symbol arg-sub-list) [20118 20129])
+                    ("nTareaID" variable (:type "int") (reparse-symbol arg-sub-list) [20130 20143])
+                    ("szNombreColaSend" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20197 20226])
+                    ("szNombreColaRecv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20280 20309])
+                    ("pclsAplicacion" variable
+                       (:pointer 1
+                        :type ("CAplicacion101" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20363 20394]))                  
+                :type ("CConexionProcesoGestor101" type (:type "class") nil nil))
+                nil [20049 20541])
+            ("CConexionProcesoGestor101" function
+               (:destructor-flag t
+                :parent "CAplicacion101::CConexionProcesoGestor101"
+                :type "void")
+                nil [20542 20617])
+            ("NProcessMessage" function
+               (:parent "CAplicacion101::CConexionProcesoGestor101"
+                :arguments 
+                  ( ("pstcMensaje" variable
+                       (:pointer 1
+                        :type ("ipcMENSAJES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20682 20707]))                  
+                :type "int")
+                nil [20619 20884])
+            ("NProcessTelemando" function
+               (:parent "CAplicacion101::CConexionProcesoGestor101"
+                :arguments 
+                  ( ("pstcTelemandoEvt" variable
+                       (:pointer 1
+                        :type ("EVENTO_TELEMANDO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20951 20986]))                  
+                :type "int")
+                nil [20886 21106])
+            ("PFindSector" function
+               (:pointer 1
+                :parent "CAplicacion101::CConexionProcesoGestor101"
+                :arguments 
+                  ( ("pstcCabMsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("StcCabeceraMensaje" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21216 21253]))                  
+                :type ("CSector101" type (:type "class") nil nil))
+                nil [21108 22261])
+            ("_NTrataMsgIncidencia" function
+               (:parent "CAplicacion101"
+                :arguments 
+                  ( ("stcMsg" variable (:type ("ipcMENSAJES" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22304 22323]))                  
+                :type "int")
+                nil [22263 31266])
+            ("_PGetCanal" function
+               (:pointer 1
+                :parent "CAplicacion101"
+                :arguments 
+                  ( ("pcPortName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31411 31434]))                  
+                :type ("CCanal" type (:type "class") nil nil))
+                nil [31375 31908])
+            ("_NParseBitStringInfo" function
+               (:parent "CAplicacion101"
+                :arguments 
+                  ( ("pstcTraza" variable
+                       (:pointer 1
+                        :type ("CMANDOTRAZA_MES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32403 32430])
+                    ("pstcBitStrings" variable
+                       (:pointer 1
+                        :type ("D_BITSTRINGS_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32431 32465]))                  
+                :type "int")
+                nil [32362 39073])
+            ("_NParseDBversion" function
+               (:pointer 1
+                :parent "CAplicacion101"
+                :constant-flag t
+                :arguments 
+                  ( ("pcConfigRev" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39228 39252]))                  
+                :type "char")
+                nil [39183 39716])
+            ("BProcessIsRoot" function
+               (:parent "CAplicacion101"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39883 39888]))                  
+                :type "bool")
+                nil [39847 39918])
+            ("VSetRunningAsRoot" function
+               (:parent "CAplicacion101"
+                :arguments 
+                  ( ("bRootPerms" variable (:type "bool") (reparse-symbol arg-sub-list) [40049 40065]))                  
+                :type "void")
+                nil [40010 40100]))          
+      :file "aplicacion101.cpp"
+      :pointmax 40102
+      :fsize 41086
+      :lastmodtime '(23613 53649 302429 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("D_DEFAULT_SESION_MODO" . ((symbol "D_IEC_SESION_MODO_DESBALANCEADO" 1065 . 1096)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "aplicacion101.h"
+      :fsize 9170
+      :lastmodtime '(23613 53647 692317 0))
+    (semanticdb-table "semanticdb-table"
+      :file "CLoadReport.h"
+      :fsize 1265
+      :lastmodtime '(23613 53649 316789 0))
+    (semanticdb-table "semanticdb-table"
+      :file "CMiniLog.h"
+      :fsize 3022
+      :lastmodtime '(23613 53649 306016 0)))
+  :file "!home!coco!workspace!UCS61850_UFD!src!bin!iec_101s!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
