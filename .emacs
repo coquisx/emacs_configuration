@@ -13,11 +13,14 @@
 
 ;; Function to load all *.el files in emacs directory
 (load "~/.emacs.d/init.el")
-(load "~/.emacs.d/custom-helm-projectile-config.el")
-(load "~/.emacs.d/custom-semantic-config.el")
-(load "~/.emacs.d/custom-sr-speedbar-config.el")
-(load "~/.emacs.d/cplusplus-mode.el")
-(load "~/.emacs.d/custom-ggtags-config.el")
+(load "~/.emacs.d/custom-sr-speedbar.el")
+(load "~/.emacs.d/custom-cplusplus.el")
+(load "~/.emacs.d/custom-irony.el")
+(load "~/.emacs.d/custom-org-mode.el")
+;;(load "~/.emacs.d/custom-helm-projectile-config.el")
+;;(load "~/.emacs.d/custom-semantic-config.el")
+;;(load "~/.emacs.d/cplusplus-mode.el")
+;;(load "~/.emacs.d/custom-ggtags-config.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -26,15 +29,12 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
- '(inhibit-startup-screen t)
- '(initial-buffer-choice nil)
- '(package-selected-packages
-   (quote
-    (stickyfunc-enhance ggtags helm-projectile projectile sr-speedbar)))
+ '(package-selected-packages (quote (cmake-mode irony stickyfunc-enhance sr-speedbar)))
+ '(speedbar-directory-unshown-regexp "^\\(CVS\\|RCS\\|SCCS\\|\\.\\.*$\\)\\'")
+ '(speedbar-show-unknown-files t)
  '(sr-speedbar-right-side nil)
+ '(sr-speedbar-skip-other-window-p t)
  '(sr-speedbar-width 15 t))
-
-;(setq backup-directory-alist '(("." . "/tmp")))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -42,6 +42,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-
-
