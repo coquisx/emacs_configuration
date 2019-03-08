@@ -29,7 +29,9 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
- '(package-selected-packages (quote (cmake-mode irony stickyfunc-enhance sr-speedbar)))
+ '(package-selected-packages
+   (quote
+    (rtags cmake-mode irony stickyfunc-enhance sr-speedbar)))
  '(speedbar-directory-unshown-regexp "^\\(CVS\\|RCS\\|SCCS\\|\\.\\.*$\\)\\'")
  '(speedbar-show-unknown-files t)
  '(sr-speedbar-right-side nil)

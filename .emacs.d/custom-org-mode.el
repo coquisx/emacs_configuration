@@ -1,5 +1,9 @@
 ;; Establece los ficheros org
-(setq org-agenda-files (list "~/org/guia.org")) 	
+(setq org-agenda-files (list "~/org/guia.org"))
+(setq org-agenda-files (list "~/org/organizer.org"))
+
+(set-register ?o (cons 'file "~/org/organizer.org"))
+(set-register ?g (cons 'file "~/org/guia.org"))
 
 ;; Las siguiente líneas son siempre necesarias. Elige
 ;; tus propias claves
