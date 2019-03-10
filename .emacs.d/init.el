@@ -56,3 +56,6 @@
 ;; Set tango-dark theme
 (load-theme 'tango-dark t)
 
+;; google-this
+(google-this-mode 1)
+(global-set-key (kbd "C-x g") 'google-this-mode-submap)

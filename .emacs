@@ -13,14 +13,15 @@
 
 ;; Function to load all *.el files in emacs directory
 (load "~/.emacs.d/init.el")
-(load "~/.emacs.d/custom-sr-speedbar.el")
-(load "~/.emacs.d/custom-cplusplus.el")
-(load "~/.emacs.d/custom-irony.el")
+;;(load "~/.emacs.d/custom-sr-speedbar.el")
+;;(load "~/.emacs.d/custom-cplusplus.el")
+;;(load "~/.emacs.d/custom-irony.el")
 (load "~/.emacs.d/custom-org-mode.el")
-;;(load "~/.emacs.d/custom-helm-projectile-config.el")
+(load "~/.emacs.d/custom-helm-projectile-config.el")
 ;;(load "~/.emacs.d/custom-semantic-config.el")
 ;;(load "~/.emacs.d/cplusplus-mode.el")
 ;;(load "~/.emacs.d/custom-ggtags-config.el")
+;;(load "~/.emacs.d/rtags.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -31,7 +32,7 @@
    [default default default italic underline success warning error])
  '(package-selected-packages
    (quote
-    (rtags cmake-mode irony stickyfunc-enhance sr-speedbar)))
+    (google-this google rtags cmake-mode irony stickyfunc-enhance sr-speedbar)))
  '(speedbar-directory-unshown-regexp "^\\(CVS\\|RCS\\|SCCS\\|\\.\\.*$\\)\\'")
  '(speedbar-show-unknown-files t)
  '(sr-speedbar-right-side nil)
