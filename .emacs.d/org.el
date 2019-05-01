@@ -1,13 +1,10 @@
 ;; Establece los ficheros org
 ;;(setq org-directory "~/org/"))
-(setq org-agenda-files (list "~/org/guia.org"
-			     "~/org/guia_emacs.org"
-			     "~/org/guia_git.org"))
-(setq org-agenda-files (list "~/org/organizer.org"
-			     "~/org/organizer2.org"))
+(setq org-agenda-files (list "/media/coco/Datos/org/guia.org"))
+(setq org-agenda-files (list "/media/coco/Datos/org/agenda.org"))
 
-(set-register ?o (cons 'file "~/org/organizer.org"))
-(set-register ?g (cons 'file "~/org/guia.org"))
+(set-register ?o (cons 'file "/media/coco/Datos/org/agenda.org"))
+(set-register ?g (cons 'file "/media/coco/Datos/org/guia.org"))
 
 ;; Las siguiente líneas son siempre necesarias. Elige
 ;; tus propias claves
@@ -25,6 +22,5 @@
 (setq org-todo-keyword-faces
       '(("IN-PROGRESS" . "dark orange") ("WAITING" . "gold") ("CANCELED" . "gray")))
 
-(setq org-tag-alist '(("@ucs" . ?u)
-		      ("@emacs" . ?e)
-		      ("@sls" . ?s)))
+;(setq org-tag-alist '(("@emacs" . ?e)
+;		      ("@git" . ?g)))

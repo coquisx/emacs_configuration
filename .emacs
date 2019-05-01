@@ -20,19 +20,12 @@
 (load "~/.emacs.d/cplusplus.el")
 (load "~/.emacs.d/company.el")
 (load "~/.emacs.d/irony.el")
-;(load "~/.emacs.d/company-irony-rtags.el")
+(load "~/.emacs.d/markdown.el")
+(load "~/.emacs.d/cmake.el")
+
+;; flycheck provoca algun error junto con el cmake-ide FIXME
 ;(load "~/.emacs.d/flycheck.el")
 ;(load "~/.emacs.d/cmake-ide.el")
-
-;;(load "~/.emacs.d/custom-google.el")
-;;(load "~/.emacs.d/custom-sr-speedbar.el")
-;;(load "~/.emacs.d/custom-irony.el")
-;;(load "~/.emacs.d/custom-org-mode.el")
-;;(load "~/.emacs.d/custom-helm-projectile-config.el")
-;;(load "~/.emacs.d/custom-semantic-config.el")
-;;(load "~/.emacs.d/cplusplus-mode.el")
-;;(load "~/.emacs.d/custom-ggtags-config.el")
-;;(load "~/.emacs.d/rtags.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -44,9 +37,12 @@
  '(custom-safe-themes
    (quote
     ("080fd60366fb1d6e7aea9f8fd0de03e2a40ac995e51b1ed21de37431d43b4d88" default)))
+ '(org-agenda-files
+   (quote
+    ("/media/coco/Datos/org/guia_entorno.org" "/media/coco/Datos/org/guia.org" "/media/coco/Datos/org/agenda.org")) t)
  '(package-selected-packages
    (quote
-    (cmake-ide flycheck-irony flycheck-rtags flycheck company-irony-c-headers company-irony irony helm-rtags company-rtags company which-key highlight-indentation undo-tree helm-projectile helm))))
+    (cmake-project cmake-mode markdown-mode cmake-ide flycheck-irony flycheck-rtags flycheck company-irony-c-headers company-irony irony helm-rtags company-rtags company which-key highlight-indentation undo-tree helm-projectile helm))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
