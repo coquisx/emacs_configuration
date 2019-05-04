@@ -49,11 +49,15 @@
 ;; Modo parentesis activado
 (show-paren-mode)
 
-;; Muestra espacios final linea
+;; Gestion de espacios en blanco
 (setq-default show-trailing-whitespace t)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Muestra numero de columna
 (setq column-number-mode t)
+
+;; Activa flycheck
+;;(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; guia de indice
 ;;(add-hook 'c++-mode-hook 'highlight-indent-guides-mode)
@@ -74,4 +78,3 @@
 (load-theme 'zenburn t)
 ;;(load-theme 'tango-dark t)
 ;;(load-theme 'panda t)
-

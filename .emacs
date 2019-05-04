@@ -22,9 +22,7 @@
 (load "~/.emacs.d/irony.el")
 (load "~/.emacs.d/markdown.el")
 (load "~/.emacs.d/cmake.el")
-
-;; flycheck provoca algun error junto con el cmake-ide FIXME
-;(load "~/.emacs.d/flycheck.el")
+(load "~/.emacs.d/flycheck.el")
 ;(load "~/.emacs.d/cmake-ide.el")
 
 (custom-set-variables
